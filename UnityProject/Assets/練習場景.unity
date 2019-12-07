@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 460134544}
   m_Layer: 0
   m_Name: "\u80CC\u666F\u97F3\u6A02"
-  m_TagString: Untagged
+  m_TagString: BGM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -483,7 +483,6 @@ MonoBehaviour:
   MonsterLife: 300
   MonsterLifeText: {fileID: 0}
   MonsterR2d: {fileID: 0}
-  hurtClip: {fileID: 8300000, guid: 0bda53c42232dad41a2a79b16daf8b10, type: 3}
   MonsterAud: {fileID: 535656286}
 --- !u!82 &535656286
 AudioSource:
@@ -496,7 +495,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 1379317466703653365, guid: 7120f089fdeea194ea5ae0ec7c0d0042,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0bda53c42232dad41a2a79b16daf8b10, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1210,7 +1209,6 @@ MonoBehaviour:
   PlayerBulletTrm: {fileID: 1212127335}
   CreateBulletTime: 0
   _Black: {fileID: 535656285}
-  ShootClip: {fileID: 8300000, guid: e9552f51221d8f04999e786243374ffe, type: 3}
   PlayerAud: {fileID: 2129298586}
 --- !u!82 &2129298586
 AudioSource:
@@ -1223,7 +1221,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -4530496037639044647, guid: 7120f089fdeea194ea5ae0ec7c0d0042,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e9552f51221d8f04999e786243374ffe, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

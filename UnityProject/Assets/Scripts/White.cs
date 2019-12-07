@@ -22,8 +22,8 @@ public class White : MonoBehaviour
     public float CreateBulletTime;
     [Header("怪物腳本")]
     public Black _Black;
-    [Header("子彈發射音效")]
-    public AudioClip ShootClip;
+   // [Header("子彈發射音效")]
+   //// public AudioClip ShootClip;
     [Header("喇叭")]
     public AudioSource PlayerAud;
     #endregion
@@ -42,11 +42,14 @@ public class White : MonoBehaviour
             CreateBulletTime++;
             if (CreateBulletTime > 2.5f && _Black.MonsterLife > 0)
             {
-                PlayerAud.PlayOneShot(ShootClip);
+                PlayerAud.Play();
+                GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>().volume = 0.5f;
                 CreateBullet();
                 CreateBulletTime = 0;
+                GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>().volume = 0.5f;
             }
         }
+        
     }
     #endregion
 

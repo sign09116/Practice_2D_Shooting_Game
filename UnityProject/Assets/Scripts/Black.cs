@@ -12,8 +12,8 @@ public class Black : MonoBehaviour
     public Text MonsterLifeText;
     [Header("怪物剛體")]
     public Rigidbody2D MonsterR2d;
-    [Header("怪物受傷音效")]
-    public AudioClip hurtClip;
+    //[Header("怪物受傷音效")]
+    //public AudioClip hurtClip;
     [Header("喇叭")]
     public AudioSource MonsterAud;
     #endregion
@@ -30,7 +30,8 @@ public class Black : MonoBehaviour
     {
         if (Hit.tag == "子彈")
         {
-            MonsterAud.PlayOneShot(hurtClip);
+            MonsterAud.Play();
+            GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>().volume = 0.5f;
             MonsterLife--;
             MonsterLifeText.text = MonsterLife.ToString();
             if (MonsterLife <= 0)
